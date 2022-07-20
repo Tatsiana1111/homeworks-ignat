@@ -1,7 +1,42 @@
 .default {
-
+    font-family: 'Poppins';
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    background: #60bcae;
+    padding: 10px;
+    border-radius: 30px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
 }
 
+.default:hover {
+    text-shadow: 0px 0px 6px rgb(34, 0, 255);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    transition: all 0.4s ease 0s;
+}
+
+
 .red {
-    background: red;
+    font-family: 'Poppins';
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    background: #bc60b4;
+    padding: 10px;
+    border-radius: 30px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+}
+
+.red:hover {
+    text-shadow: 0px 0px 6px rgb(200, 16, 16);
+    -webkit-box-shadow: 0px 5px 40px -10px rgb(200, 16, 16);
+    -moz-box-shadow: 0px 5px 40px -10px rgb(200, 16, 16);
+    transition: all 0.4s ease 0s;
 }
