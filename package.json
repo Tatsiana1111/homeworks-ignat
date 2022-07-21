@@ -17,13 +17,13 @@
     "typescript": "~3.7.2",
     "uuid": "^8.3.2"
   },
-  "homepage": "https://Tatsiana1111.github.io/homeworks-ignat",
+  "homepage": "https://tatsiana1111.github.io/homeworks-ignat",
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "yarn run build",
+    "predeploy": "npx run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
