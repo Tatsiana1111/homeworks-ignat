@@ -1,18 +1,24 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Header from './Header'
 import Pages from './Pages'
+import {HashRouter} from "react-router-dom";
 
 function HW5() {
+    const [onOff, setOnOff] = useState(true)
+    const onMouseHandler = () => {
+        setOnOff(!onOff)
+    }
     return (
         <div>
             {/*в gh-pages лучше работает HashRouter*/}
-            {/*<HashRouter>*/}
+            <HashRouter>
+                <span>
+                    <button onMouseOver={onMouseHandler}>BUTTON</button>
+                    {!onOff && <Header/>}
+                </span>
+                <Pages/>
 
-            <Header/>
-
-            <Pages/>
-
-            {/*</HashRouter>*/}
+            </HashRouter>
         </div>
     )
 }
