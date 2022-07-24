@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import Header from './Header'
 import Pages from './Pages'
 import {HashRouter} from "react-router-dom";
+import s from './Header.module.css'
 
 function HW5() {
     const [onOff, setOnOff] = useState(true)
@@ -12,10 +13,10 @@ function HW5() {
         <div>
             {/*в gh-pages лучше работает HashRouter*/}
             <HashRouter>
-                <span>
-                    <button onMouseOver={onMouseHandler}>BUTTON</button>
+                <div className={s.navbar}>
+                    <button className={s.button} onMouseOver={onMouseHandler}/>
                     {!onOff && <Header/>}
-                </span>
+                </div>
                 <Pages/>
 
             </HashRouter>
