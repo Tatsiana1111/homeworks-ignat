@@ -1,0 +1,24 @@
+.indicator {
+    position: relative;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+}
+
+.indicator::before,
+.indicator::after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+}
+
+.indicator::after {
+    transition: opacity .25s ease-in-out, transform .25s ease-in-out;
+    transform: scale3d(.975, .975, 1) translate3d(0, 10%, 0);
+    opacity: 0;
+}
