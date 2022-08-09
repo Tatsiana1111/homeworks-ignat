@@ -1,4 +1,6 @@
-export const homeWorkReducer = (state: any, action: any): any => { // need to fix any
+import {UserType} from "../HW8";
+
+export const homeWorkReducer = (state: UserType[], action: any): any => { // need to fix any
     switch (action.type) {
         case 'sort': {
             // need to fix
@@ -8,6 +10,7 @@ export const homeWorkReducer = (state: any, action: any): any => { // need to fi
             // need to fix
             return state
         }
-        default: return state
+        default:
+            return state
     }
 }
