@@ -23,8 +23,8 @@ function HW8() {
     // need to fix any
     const finalPeople = people.map((p: UserType) => (
         <div key={p._id}>
-            <span>{p.name}</span>
-            <span>{p.age}</span>
+            <span style={{margin: '10px'}}>{p.name}</span>
+            <span style={{margin: '10px'}}>{p.age}</span>
         </div>
     ))
 
