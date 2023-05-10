@@ -11,8 +11,8 @@ function HW10() {
     const dispatch = useDispatch()
 
     const setLoading = () => {
-        const changeLoadingStatus = () => dispatch(loadingAC(true))
-        setTimeout(changeLoadingStatus, 0)
+        const changeLoadingStatus = (isLoading: boolean) => dispatch(loadingAC(isLoading))
+        setTimeout(changeLoadingStatus, 1000)
         // dispatch
         // setTimeout
         console.log('loading...')
