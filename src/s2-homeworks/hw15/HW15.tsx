@@ -30,7 +30,7 @@ type ParamsType = {
 const getTechs = (params: ParamsType) => {
     return axios
         .get<{ techs: TechType[], totalCount: number }>(
-            'https://incubator-personal-page-back.herokuapp.com/api/3.0/homework/test3',
+            'https://samurai.it-incubator.io/api/3.0/homework/test3',
             {params}
         )
         .catch((e) => {
@@ -69,7 +69,7 @@ const HW15 = () => {
         setPage(newPage)
         setCount(newCount)
 
-        sendQuery( {sort: sort ,page: newPage, count: newCount})
+        sendQuery({sort: sort, page: newPage, count: newCount})
         // setSearchParams(
 
         //
